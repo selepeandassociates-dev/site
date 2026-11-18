@@ -1,0 +1,87 @@
+<!-- title: Contact Us | desc: Request a consultation with Selepe & Associates Inc. Call 076 984 8560, email info@selepe.co or message us on WhatsApp. Head office in Soshanguve East, Tshwane. -->
+
+<section class="page-hero motif">
+  <div class="wrap">
+    <nav aria-label="Breadcrumb" class="text-xs text-silver-400"><a href="index.html" class="hover:text-gold-300">Home</a><span class="mx-2 text-gold-400">/</span>Contact</nav>
+    <p class="eyebrow mt-8">Contact us</p>
+    <h1 class="mt-4 max-w-3xl text-4xl font-medium leading-tight text-white sm:text-5xl">Let&rsquo;s discuss how we can <span class="font-serif italic text-gold-400">support you</span>.</h1>
+    <p class="lead mt-6 max-w-2xl">Tell us what you need and we will recommend the service model that fits, with transparent commercial terms.</p>
+  </div>
+</section>
+
+<section class="bg-cream-100 py-16 sm:py-20">
+  <div class="wrap grid gap-12 lg:grid-cols-12">
+
+    <!-- Form -->
+    <div class="lg:col-span-7">
+      <h2 class="text-2xl font-medium sm:text-3xl">Request a consultation</h2>
+      <form data-contact class="mt-8 space-y-4" novalidate>
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label for="c-name" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-navy-600">Your name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" class="field" required>
+          </div>
+          <div>
+            <label for="c-email" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-navy-600">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" class="field" required>
+          </div>
+          <div>
+            <label for="c-phone" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-navy-600">Phone <span class="font-normal normal-case tracking-normal text-navy-400">(optional)</span></label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel" class="field">
+          </div>
+          <div>
+            <label for="c-topic" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-navy-600">I&rsquo;m enquiring about</label>
+            <select id="c-topic" name="topic" class="field">
+              <option>General enquiry</option>
+              <option>Legal-as-a-Service plan</option>
+              <option>Corporate legal services</option>
+              <option>Managed legal operations / EOPS</option>
+              <option>Recoveries and collections</option>
+              <option>Litigation and dispute resolution</option>
+              <option>Property, conveyancing and notarial</option>
+              <option>Family, estates or criminal matter</option>
+              <option>Correspondent and agency services</option>
+              <option>LEAP Academy training</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="c-msg" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-navy-600">Message</label>
+          <textarea id="c-msg" name="message" rows="6" class="field" required></textarea>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <p data-status role="status" class="text-sm"></p>
+          <button type="submit" class="btn-gold">Send Message {{icon:arrow:h-4 w-4}}</button>
+        </div>
+        <p class="text-xs leading-relaxed text-navy-500">Please do not send confidential case details through this form. We handle personal information in line with POPIA, and a formal mandate follows conflict checks and client verification.</p>
+      </form>
+    </div>
+
+    <!-- Details -->
+    <aside class="space-y-5 lg:col-span-5">
+      <div class="card p-7">
+        <h2 class="text-xl font-medium">Contact details</h2>
+        <ul class="mt-5 space-y-5 text-sm text-navy-800">
+          <li class="flex gap-4"><span class="mt-0.5 text-gold-500">{{icon:phone:h-5 w-5}}</span><div><p class="text-[0.7rem] font-semibold uppercase tracking-caps text-gold-500">Mobile</p><a href="tel:{{phone_href}}" class="hover:text-gold-600">{{phone}}</a></div></li>
+          <li class="flex gap-4"><span class="mt-0.5 text-gold-500">{{icon:mail:h-5 w-5}}</span><div><p class="text-[0.7rem] font-semibold uppercase tracking-caps text-gold-500">Email</p><a href="mailto:{{email}}" class="hover:text-gold-600">{{email}}</a></div></li>
+          <li class="flex gap-4"><span class="mt-0.5 text-gold-500">{{icon:globe:h-5 w-5}}</span><div><p class="text-[0.7rem] font-semibold uppercase tracking-caps text-gold-500">Website</p><a href="{{url}}" class="hover:text-gold-600">www.selepe.co</a></div></li>
+          <li class="flex gap-4"><span class="mt-0.5 text-gold-500">{{icon:pin:h-5 w-5}}</span><div><p class="text-[0.7rem] font-semibold uppercase tracking-caps text-gold-500">Head office</p><p>{{address}}<br>{{region}}</p></div></li>
+        </ul>
+        <a href="https://wa.me/{{wa_number}}?text=Hello%20Selepe%20%26%20Associates%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="mt-7 inline-flex w-full items-center justify-center gap-2 bg-[#25D366] px-6 py-3 text-sm font-semibold text-white transition hover:brightness-95">{{icon:chat:h-5 w-5}} Message us on WhatsApp</a>
+      </div>
+
+      <div class="on-dark border border-gold-400/40 bg-navy-900 p-7">
+        <span class="text-gold-400">{{icon:clock:h-8 w-8}}</span>
+        <h2 class="mt-3 text-lg font-medium">Urgent criminal matter?</h2>
+        <p class="mt-2 text-sm leading-relaxed text-silver-300">We provide 24/7 urgent bail applications, at the police station and in court. Call us directly.</p>
+        <a href="tel:{{phone_href}}" class="mt-4 inline-flex items-center gap-2 font-display text-xl text-gold-300 hover:text-gold-200">{{phone}}</a>
+      </div>
+
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=1300+Umabu+Street+Koekoekvalk+Soshanguve+East+0152" target="_blank" rel="noopener" class="group relative block min-h-[11rem] overflow-hidden bg-navy-900 bg-cover bg-center shadow-card" style="background-image:url('img/skyline.svg')">
+        <span class="absolute inset-0 bg-navy-950/55 transition group-hover:bg-navy-950/40"></span>
+        <span class="relative flex h-full min-h-[11rem] flex-col items-center justify-center gap-2 text-white">{{icon:pin:h-8 w-8 text-gold-300}}<span class="text-sm font-semibold">Open in Google Maps</span></span>
+      </a>
+    </aside>
+  </div>
+</section>
