@@ -2,7 +2,7 @@
 
 <!-- HERO -->
 <section class="on-dark relative isolate overflow-hidden bg-navy-950 pt-32 pb-20 sm:pt-44 sm:pb-32"
-  style="background-image: linear-gradient(90deg, rgba(7,15,38,.96) 0%, rgba(7,15,38,.82) 42%, rgba(7,15,38,.5) 100%), url('img/hero.jpg'), url('img/hero.svg'); background-size: cover; background-position: right center;">
+  style="background-image: linear-gradient(90deg, rgba(7,15,38,.96) 0%, rgba(7,15,38,.82) 42%, rgba(7,15,38,.5) 100%), url('img/hero.jpg'), url('img/hero.svg'); background-size: cover; background-position: 70% center;">
   <div class="wrap">
     <div class="max-w-3xl border-l-2 border-gold-400/70 pl-6 sm:pl-10">
       <p class="eyebrow reveal">Above and Beyond Legal Services</p>
@@ -47,35 +47,36 @@
   </div>
 </section>
 
-<!-- ABOUT + IMAGE + SERVICES -->
-<section class="bg-cream-100">
-  <div class="grid lg:grid-cols-[27fr_32fr_41fr]">
-    <div class="px-5 py-14 sm:px-10 lg:py-20 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))]">
+<!-- ABOUT + IMAGE + SERVICES
+     Wide screens (1440+): three columns side by side, as in the mockup.
+     Laptops (1024-1439): About | Image on top, services as one row of six below.
+     Tablet/phone: stacked, image edge to edge. -->
+<section class="bg-cream-100" aria-label="About and services">
+  <div class="mx-auto grid max-w-[100rem] lg:grid-cols-2 min-[1440px]:grid-cols-[26fr_40fr_34fr]">
+
+    <div class="flex flex-col justify-center px-5 py-10 sm:px-10 lg:px-10 lg:py-12">
       <span class="rule reveal"></span>
-      <h2 class="reveal mt-6 text-3xl font-medium sm:text-4xl">About Our Firm</h2>
-      <p class="reveal mt-5 text-[0.95rem] leading-relaxed text-navy-700">
-        Selepe &amp; Associates Inc is a multi-disciplinary law firm that brings legal practice, governance support, recovery expertise and operational capacity together under one accountable structure.
+      <h2 class="reveal mt-4 text-2xl font-medium sm:text-3xl">About Our Firm</h2>
+      <p class="reveal mt-3 max-w-md text-[0.9rem] leading-relaxed text-navy-700">
+        Selepe &amp; Associates Inc is a multi-disciplinary law firm that brings legal practice, recovery expertise and operational capacity together under one accountable team. We act for individuals, businesses and institutions, with practical advice and a commitment to your success.
       </p>
-      <p class="reveal mt-4 text-[0.95rem] leading-relaxed text-navy-700">
-        We act for individuals, families, growing businesses, corporates and institutions, with practical advice, transparent pricing and a commitment to your success.
-      </p>
-      <a href="about.html" class="btn-outline reveal mt-8">Learn More {{icon:arrow:h-4 w-4}}</a>
+      <a href="about.html" class="btn-outline reveal mt-6 self-start !py-2.5">Learn More {{icon:arrow:h-4 w-4}}</a>
     </div>
 
-    <div class="min-h-[280px] bg-navy-900 bg-cover bg-center lg:min-h-full" style="background-image:url('img/boardroom.jpg'),url('img/boardroom.svg')" role="img" aria-label="Boardroom"></div>
+    <div class="aspect-[16/9] w-full bg-navy-900 bg-cover lg:aspect-auto lg:min-h-[20rem]" style="background-image:url('img/boardroom.jpg'),url('img/boardroom.svg'); background-position: 58% center" role="img" aria-label="Boardroom overlooking the city"></div>
 
-    <div class="px-5 py-14 sm:px-10 lg:py-20 lg:pr-[max(2rem,calc((100vw-80rem)/2+2rem))]">
-      <h2 class="reveal text-3xl font-medium sm:text-4xl">Our Services</h2>
-      <p class="reveal mt-3 text-[0.95rem] text-navy-700">Comprehensive legal services tailored to your needs.</p>
-      <div class="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3">
-        <a href="services.html#corporate" class="tile reveal">{{icon:briefcase:h-7 w-7 text-gold-500}}Corporate &amp; Commercial Law</a>
-        <a href="services.html#labour" class="tile reveal" data-delay="60">{{icon:users:h-7 w-7 text-gold-500}}Labour &amp; Employment Law</a>
-        <a href="services.html#litigation" class="tile reveal" data-delay="120">{{icon:gavel:h-7 w-7 text-gold-500}}Litigation &amp; Dispute Resolution</a>
-        <a href="services.html#insurance" class="tile reveal" data-delay="60">{{icon:shield:h-7 w-7 text-gold-500}}Insurance, Liability &amp; Injury</a>
-        <a href="services.html#debt" class="tile reveal" data-delay="120">{{icon:coins:h-7 w-7 text-gold-500}}Debt Recovery &amp; Credit Enforcement</a>
-        <a href="services.html#property" class="tile reveal" data-delay="180">{{icon:home:h-7 w-7 text-gold-500}}Property, Conveyancing &amp; Notarial</a>
+    <div class="flex flex-col justify-center px-5 py-10 sm:px-10 lg:col-span-2 lg:px-10 lg:py-12 min-[1440px]:col-span-1">
+      <h2 class="reveal text-2xl font-medium sm:text-3xl">Our Services</h2>
+      <p class="reveal mt-2 text-[0.9rem] text-navy-700">Comprehensive legal services tailored to your needs.</p>
+      <div class="mt-5 grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-6 min-[1440px]:grid-cols-3">
+        <a href="services.html#corporate" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal">{{icon:briefcase:h-5 w-5 text-gold-500}}Corporate &amp; Commercial Law</a>
+        <a href="services.html#labour" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal" data-delay="60">{{icon:users:h-5 w-5 text-gold-500}}Labour &amp; Employment Law</a>
+        <a href="services.html#litigation" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal" data-delay="120">{{icon:gavel:h-5 w-5 text-gold-500}}Litigation &amp; Dispute Resolution</a>
+        <a href="services.html#insurance" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal" data-delay="60">{{icon:shield:h-5 w-5 text-gold-500}}Insurance, Liability &amp; Injury</a>
+        <a href="services.html#debt" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal" data-delay="120">{{icon:coins:h-5 w-5 text-gold-500}}Debt Recovery &amp; Credit Enforcement</a>
+        <a href="services.html#property" class="tile !gap-1.5 !px-2 !py-3 !text-[0.74rem] reveal" data-delay="180">{{icon:home:h-5 w-5 text-gold-500}}Property, Conveyancing &amp; Notarial</a>
       </div>
-      <a href="services.html" class="btn-outline reveal mt-7">Explore All Nine Areas {{icon:arrow:h-4 w-4}}</a>
+      <a href="services.html" class="btn-outline reveal mt-5 self-start !py-2.5">Explore All Nine Areas {{icon:arrow:h-4 w-4}}</a>
     </div>
   </div>
 </section>
@@ -180,7 +181,7 @@
   </div>
 
   <div id="contact" class="bg-cream-100 px-5 py-14 sm:px-10 lg:py-16 lg:pl-12 lg:pr-[max(2rem,calc((100vw-80rem)/2+2rem))]">
-    <div class="grid gap-10 xl:grid-cols-[1fr_1.1fr]">
+    <div class="max-w-xl space-y-8">
       <div>
         <h2 class="reveal text-3xl font-medium">Get in Touch</h2>
         <p class="reveal mt-3 text-[0.95rem] text-navy-700">Let&rsquo;s discuss how we can support you or your business.</p>

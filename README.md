@@ -31,16 +31,21 @@ Brand tokens (navy, gold, silver, cream, fonts) are in `tailwind.config.js`. Reu
 
 ## Replacing placeholder images
 
-Each image slot tries a real photo first and falls back to a generated placeholder, so replacing is drop-in. Save your file with the name below in `img/` and it takes over.
+The Home and Industries page pictures are designed for **2048 × 768 px** (about 8:3, JPG). Each slot tries your file first and falls back to a generated placeholder, so replacing is drop-in: save the file with the name below in `img/`.
 
-| Save as | Used for | Suggested size |
+| Save as | Where it appears | Composition tip |
 |---|---|---|
-| `img/hero.jpg` | Home hero background (right side is visible; keep the left calm) | 2400 × 1200 |
-| `img/boardroom.jpg` | Home "About" panel | 1000 × 1100 |
-| `img/skyline.jpg` | Home sectors panel, Industries page | 1600 × 900 |
-| `img/thabo.jpg`, `img/thabo-sq.jpg` | Founder portrait (currently cropped from the flyer; replace with a proper studio photo) | 1200 × 1300 / 600 × 600 |
+| `img/hero.jpg` | Home hero background | Keep the left 45% calm and dark; the headline sits there. Subject on the right. |
+| `img/boardroom.jpg` | Home page middle column beside "About Our Firm" and "Our Services" | **16:9**, about 1600 × 900 px. Keep the main subject in the centre; the sides crop slightly on some screens. |
+| `img/skyline.jpg` | Home "Sectors We Serve" panel and the Industries page | Shown at roughly 16:9 on desktop, so keep the subject near the centre. |
+| `img/thabo.jpg` | Portrait on the About and Leadership pages | Portrait-style crop, about 1200 × 1300 px (4 : 4.3). Head and shoulders, face in the upper half. |
+| `img/thabo-sq.jpg` | Small round portrait in the Home "Why Choose Us" band | Square, 600 × 600 px, face centred. |
 
-The logo (`img/logo.png`) was extracted from the company profile PDF. A vector or higher-resolution export would sharpen it.
+On phones the wide banners crop to a taller shape (3:2), so keep important subjects away from the far left and right edges.
+
+`img/hero.jpg` (2048 × 768) and `img/boardroom.jpg` (16:9) are your supplied pictures, compressed to JPG (about 250-300 KB each). `img/skyline.jpg` has not been supplied yet, so a generated placeholder shows until you add it. Keep new pictures under about 400 KB.
+
+The logo (`img/logo.png`) was extracted from the company profile PDF. A vector or higher-resolution export would sharpen it. `img/thabo.jpg` and `img/thabo-sq.jpg` are currently cropped from the flyer, so replace them with proper portraits.
 
 ## Contact form
 
