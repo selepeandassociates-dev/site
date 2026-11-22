@@ -43,7 +43,7 @@ The Home and Industries page pictures are designed for **2048 × 768 px** (about
 
 On phones the wide banners crop to a taller shape (3:2), so keep important subjects away from the far left and right edges.
 
-`img/hero.jpg` (2048 × 768) and `img/boardroom.jpg` (16:9) are your supplied pictures, compressed to JPG (about 250-300 KB each). `img/skyline.jpg` has not been supplied yet, so a generated placeholder shows until you add it. Keep new pictures under about 400 KB.
+`img/hero.jpg` (2048 × 768) and `img/boardroom.jpg` (16:9) are your supplied pictures, compressed to JPG (about 250-300 KB each). `img/skyline.jpg` is your supplied city skyline (about 2048 px wide). Keep new pictures under about 400 KB.
 
 The logo (`img/logo.png`) was extracted from the company profile PDF. A vector or higher-resolution export would sharpen it. `img/thabo.jpg` and `img/thabo-sq.jpg` are currently cropped from the flyer, so replace them with proper portraits.
 
